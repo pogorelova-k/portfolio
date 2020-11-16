@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <script src="vendor/js/jquery-3.3.1.slim.min.js" defer></script>
+    <script src="vendor/js/popper.min.js" async></script>
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <script src="vendor/js/bootstrap.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="vendor/css/style.css">
+</head>
+
+<body>
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; width: 100%; z-index: 21;">
+        <a class="navbar-brand" href="#">НЛК</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Portfolio">Портфолио <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Rating">Рейтинг <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Помощь <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- HEADER -->
+    <header class="jumbotron jumbotron-fluid pl-sm-4 pl-3" id="Portfolio">
+        <div class="col-md-7">
+            <h1 class="display-4">Портфолио</h1>
+            <p class="lead">Это место, где собраны ваши научные публикации. Здесь вы можете добавлять
+                свои научные работы, получать информацию об их уникальности и смотреть отзывы ваших
+                научных руководителей.</p>
+            <a class="btn btn-primary btn-lg" href="addWork" role="button" data-toggle="modal"
+                data-target="#exampleModal">Добавить работу</a>
+        </div>
+    </header>
+    <!-- CARDS -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- CARD 1 -->
+            <section class="col-lg-5 col-md-7">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        Ваш профиль
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Сергей Павлович Фролов</h5>
+                        <p class="card-text"><b>Научная степень:</b> Магистр.<br>
+                            <b>Специализация:</b> Инвестиционные проблемы экономически развивающихся рынков.
+                        </p>
+                        <a href="#" class="btn btn-primary">Редактировать</a>
+                    </div>
+                </div>
+            </section>
+            <!-- CARD 2 -->
+            <section class="col-lg-4 col-md-5">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        Статистика
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <b>На платформе:</b> 2 года.<br>
+                            <b>Добавлено работ:</b> 10.<br>
+                            <b>Средняя уникальность:</b> 75%.<br>
+                            <b>Языки работ:</b> русский, английский.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- TABLE -->
+    <div class="col-12" id="Rating">
+        <table class="table table-bordered table-responsive-sm">
+            <thead>
+                <tr>
+                    <th scope="col">Название работы</th>
+                    <th scope="col">Дата загрузки</th>
+                    <th scope="col">Научный руководитель</th>
+                    <th scope="col">Уникальность</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">Привлечение инвестиций как фактор развития экономики</a></td>
+                    <td>21.05.2019</td>
+                    <td><a href="#">Асаншоева А.М.</a></td>
+                    <td><a href="#">89%</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">The role of accounting in sustainable development</a></td>
+                    <td>11.02.2019</td>
+                    <td><a href="#">Шаляпина В.С.</a></td>
+                    <td><a href="#">78%</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Сценарный анализ как инструмент учета рисков инвестиционного
+                            проекта</a></td>
+                    <td>05.09.2018</td>
+                    <td><a href="#">Васильев М.Г.</a></td>
+                    <td><a href="#">67%</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Глобальные и региональные инвестиционные тенденции</a></td>
+                    <td>09.07.2018</td>
+                    <td><a href="#">Асаншоева А.М.</a></td>
+                    <td><a href="#">73%</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Systemic risks in financial markets</a></td>
+                    <td>18.05.2018</td>
+                    <td><a href="#">Леонидов В.Б.</a></td>
+                    <td><a href="#">77%</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">The influence of tax regulation liberalisation on the domestic debt market</a></td>
+                    <td>09.03.2018</td>
+                    <td><a href="#">Шаляпина В.С.</a></td>
+                    <td><a href="#">82%</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Биткоин как новый вид инвестиций</a></td>
+                    <td>29.01.2018</td>
+                    <td><a href="#">Асаншоева А.М.</a></td>
+                    <td><a href="#">71%</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Проблема воспроизводства жилищного фонда в России</a></td>
+                    <td>08.11.2017</td>
+                    <td><a href="#">Васильев М.Г.</a></td>
+                    <td><a href="#">65%</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Влияние безработицы на экономику СНГ</a></td>
+                    <td>17.09.2017</td>
+                    <td><a href="#">Васильев М.Г.</a></td>
+                    <td><a href="#">68%</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Мировой валютный рынок Форекс</a></td>
+                    <td>02.07.2017</td>
+                    <td><a href="#">Васильев М.Г.</a></td>
+                    <td><a href="#">67%</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer-container">
+        <div>
+            <span style="color: #6C757D; font-family: sans-serif;">© Научный личный кабинет. Все права защищены</span>
+        </div>
+    </footer>
+    <!-- MODAL  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Заполните форму</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Название работы</label>
+                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Например - Биткоин как новый вид инвестиций">
+                          <small id="emailHelp" class="form-text text-muted">Укажите полное название</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1">Научный руководитель</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option selected>Укажите руководителя...</option>
+                            <option>Асаншоева А.М.</option>
+                            <option>Шаляпина В.С.</option>
+                            <option>Васильев М.Г.</option>
+                            <option>Леонидов В.Б.</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Язык публикации</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option selected>Укажите язык...</option>
+                                <option value="1">Русский</option>
+                                <option value="2">English</option>
+                              </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Загрузите архив с работой</label>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Выберите файл</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Согласен на проверку уникальности работы</label>
+                              </div>
+                        </div>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-primary">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

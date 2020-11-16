@@ -1,0 +1,14 @@
+body {
+    min-width: 320px;
+}
+h1{
+    padding-top: 55px;
+}
+.footer-container {
+    background-color: #F5F5F5;
+    margin-top: 64px;
+    padding-left: 55px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
